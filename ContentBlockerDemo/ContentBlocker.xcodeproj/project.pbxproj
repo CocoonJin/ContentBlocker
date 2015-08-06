@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24163A231B7308F6008F2330 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 24163A131B7308F6008F2330 /* AppDelegate.m */; };
+		24163A241B7308F6008F2330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24163A141B7308F6008F2330 /* Assets.xcassets */; };
+		24163A251B7308F6008F2330 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24163A151B7308F6008F2330 /* LaunchScreen.storyboard */; };
+		24163A261B7308F6008F2330 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24163A171B7308F6008F2330 /* Main.storyboard */; };
+		24163A271B7308F6008F2330 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24163A191B7308F6008F2330 /* Info.plist */; };
+		24163A281B7308F6008F2330 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24163A1A1B7308F6008F2330 /* main.m */; };
+		24163A291B7308F6008F2330 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24163A1C1B7308F6008F2330 /* ViewController.m */; };
+		24163A2B1B7308F6008F2330 /* ContentBlockerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24163A1F1B7308F6008F2330 /* ContentBlockerTests.m */; };
+		24163A2F1B730933008F2330 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24163A211B7308F6008F2330 /* Info.plist */; };
+		24163A301B73093E008F2330 /* ContentBlockerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 24163A221B7308F6008F2330 /* ContentBlockerUITests.m */; };
+		BB3166F41B653E8B0007595E /* blockerList.json in Resources */ = {isa = PBXBuildFile; fileRef = BB3166F31B653E8B0007595E /* blockerList.json */; };
+		BB3166F71B653E8B0007595E /* ActionRequestHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = BB3166F61B653E8B0007595E /* ActionRequestHandler.m */; };
+		BB3166FB1B653E8B0007595E /* MyContentBlock.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = BB3166F11B653E8B0007595E /* MyContentBlock.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB3166D11B653E580007595E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB3166AF1B653E580007595E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB3166B61B653E580007595E;
+			remoteInfo = Test;
+		};
+		BB3166DC1B653E590007595E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB3166AF1B653E580007595E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB3166B61B653E580007595E;
+			remoteInfo = Test;
+		};
+		BB3166F91B653E8B0007595E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB3166AF1B653E580007595E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB3166F01B653E8B0007595E;
+			remoteInfo = MyContentBlock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB3166FF1B653E8B0007595E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BB3166FB1B653E8B0007595E /* MyContentBlock.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		24163A121B7308F6008F2330 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		24163A131B7308F6008F2330 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		24163A141B7308F6008F2330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24163A161B7308F6008F2330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24163A181B7308F6008F2330 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24163A191B7308F6008F2330 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24163A1A1B7308F6008F2330 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		24163A1B1B7308F6008F2330 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		24163A1C1B7308F6008F2330 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		24163A1E1B7308F6008F2330 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24163A1F1B7308F6008F2330 /* ContentBlockerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentBlockerTests.m; sourceTree = "<group>"; };
+		24163A211B7308F6008F2330 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24163A221B7308F6008F2330 /* ContentBlockerUITests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentBlockerUITests.m; sourceTree = "<group>"; };
+		BB3166B71B653E580007595E /* ContentBlocker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContentBlocker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB3166D01B653E580007595E /* ContentBlockerContentBlockers.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ContentBlockerContentBlockers.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB3166DB1B653E590007595E /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB3166F11B653E8B0007595E /* MyContentBlock.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MyContentBlock.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB3166F31B653E8B0007595E /* blockerList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = blockerList.json; sourceTree = "<group>"; };
+		BB3166F51B653E8B0007595E /* ActionRequestHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ActionRequestHandler.h; sourceTree = "<group>"; };
+		BB3166F61B653E8B0007595E /* ActionRequestHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ActionRequestHandler.m; sourceTree = "<group>"; };
+		BB3166F81B653E8B0007595E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB3166B41B653E580007595E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB3166CD1B653E580007595E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB3166D81B653E590007595E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB3166EE1B653E8B0007595E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24163A111B7308F6008F2330 /* ContentBlocker */ = {
+			isa = PBXGroup;
+			children = (
+				24163A121B7308F6008F2330 /* AppDelegate.h */,
+				24163A131B7308F6008F2330 /* AppDelegate.m */,
+				24163A141B7308F6008F2330 /* Assets.xcassets */,
+				24163A151B7308F6008F2330 /* LaunchScreen.storyboard */,
+				24163A171B7308F6008F2330 /* Main.storyboard */,
+				24163A191B7308F6008F2330 /* Info.plist */,
+				24163A1A1B7308F6008F2330 /* main.m */,
+				24163A1B1B7308F6008F2330 /* ViewController.h */,
+				24163A1C1B7308F6008F2330 /* ViewController.m */,
+			);
+			path = ContentBlocker;
+			sourceTree = "<group>";
+		};
+		24163A1D1B7308F6008F2330 /* ContentBlockerTests */ = {
+			isa = PBXGroup;
+			children = (
+				24163A1E1B7308F6008F2330 /* Info.plist */,
+				24163A1F1B7308F6008F2330 /* ContentBlockerTests.m */,
+			);
+			path = ContentBlockerTests;
+			sourceTree = "<group>";
+		};
+		24163A201B7308F6008F2330 /* ContentBlockerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24163A211B7308F6008F2330 /* Info.plist */,
+				24163A221B7308F6008F2330 /* ContentBlockerUITests.m */,
+			);
+			path = ContentBlockerUITests;
+			sourceTree = "<group>";
+		};
+		BB3166AE1B653E580007595E = {
+			isa = PBXGroup;
+			children = (
+				24163A111B7308F6008F2330 /* ContentBlocker */,
+				24163A1D1B7308F6008F2330 /* ContentBlockerTests */,
+				24163A201B7308F6008F2330 /* ContentBlockerUITests */,
+				BB3166F21B653E8B0007595E /* MyContentBlock */,
+				BB3166B81B653E580007595E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB3166B81B653E580007595E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB3166B71B653E580007595E /* ContentBlocker.app */,
+				BB3166D01B653E580007595E /* ContentBlockerContentBlockers.xctest */,
+				BB3166DB1B653E590007595E /* TestUITests.xctest */,
+				BB3166F11B653E8B0007595E /* MyContentBlock.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB3166F21B653E8B0007595E /* MyContentBlock */ = {
+			isa = PBXGroup;
+			children = (
+				BB3166F31B653E8B0007595E /* blockerList.json */,
+				BB3166F51B653E8B0007595E /* ActionRequestHandler.h */,
+				BB3166F61B653E8B0007595E /* ActionRequestHandler.m */,
+				BB3166F81B653E8B0007595E /* Info.plist */,
+			);
+			path = MyContentBlock;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB3166B61B653E580007595E /* ContentBlocker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB3166E41B653E590007595E /* Build configuration list for PBXNativeTarget "ContentBlocker" */;
+			buildPhases = (
+				BB3166B31B653E580007595E /* Sources */,
+				BB3166B41B653E580007595E /* Frameworks */,
+				BB3166B51B653E580007595E /* Resources */,
+				BB3166FF1B653E8B0007595E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB3166FA1B653E8B0007595E /* PBXTargetDependency */,
+			);
+			name = ContentBlocker;
+			productName = Test;
+			productReference = BB3166B71B653E580007595E /* ContentBlocker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB3166CF1B653E580007595E /* ContentBlockerContentBlockers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB3166E71B653E590007595E /* Build configuration list for PBXNativeTarget "ContentBlockerContentBlockers" */;
+			buildPhases = (
+				BB3166CC1B653E580007595E /* Sources */,
+				BB3166CD1B653E580007595E /* Frameworks */,
+				BB3166CE1B653E580007595E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB3166D21B653E580007595E /* PBXTargetDependency */,
+			);
+			name = ContentBlockerContentBlockers;
+			productName = TestTests;
+			productReference = BB3166D01B653E580007595E /* ContentBlockerContentBlockers.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB3166DA1B653E590007595E /* ContentBlockerUIContentBlockers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB3166EA1B653E590007595E /* Build configuration list for PBXNativeTarget "ContentBlockerUIContentBlockers" */;
+			buildPhases = (
+				BB3166D71B653E590007595E /* Sources */,
+				BB3166D81B653E590007595E /* Frameworks */,
+				BB3166D91B653E590007595E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB3166DD1B653E590007595E /* PBXTargetDependency */,
+			);
+			name = ContentBlockerUIContentBlockers;
+			productName = TestUITests;
+			productReference = BB3166DB1B653E590007595E /* TestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		BB3166F01B653E8B0007595E /* MyContentBlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB3166FC1B653E8B0007595E /* Build configuration list for PBXNativeTarget "MyContentBlock" */;
+			buildPhases = (
+				BB3166ED1B653E8B0007595E /* Sources */,
+				BB3166EE1B653E8B0007595E /* Frameworks */,
+				BB3166EF1B653E8B0007595E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyContentBlock;
+			productName = MyContentBlock;
+			productReference = BB3166F11B653E8B0007595E /* MyContentBlock.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB3166AF1B653E580007595E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = kdanmobile;
+				TargetAttributes = {
+					BB3166B61B653E580007595E = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					BB3166CF1B653E580007595E = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = BB3166B61B653E580007595E;
+					};
+					BB3166DA1B653E590007595E = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = BB3166B61B653E580007595E;
+					};
+					BB3166F01B653E8B0007595E = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = BB3166B21B653E580007595E /* Build configuration list for PBXProject "ContentBlocker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB3166AE1B653E580007595E;
+			productRefGroup = BB3166B81B653E580007595E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB3166B61B653E580007595E /* ContentBlocker */,
+				BB3166CF1B653E580007595E /* ContentBlockerContentBlockers */,
+				BB3166DA1B653E590007595E /* ContentBlockerUIContentBlockers */,
+				BB3166F01B653E8B0007595E /* MyContentBlock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB3166B51B653E580007595E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24163A271B7308F6008F2330 /* Info.plist in Resources */,
+				24163A261B7308F6008F2330 /* Main.storyboard in Resources */,
+				24163A241B7308F6008F2330 /* Assets.xcassets in Resources */,
+				24163A251B7308F6008F2330 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB3166CE1B653E580007595E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB3166D91B653E590007595E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24163A2F1B730933008F2330 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB3166EF1B653E8B0007595E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB3166F41B653E8B0007595E /* blockerList.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB3166B31B653E580007595E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24163A291B7308F6008F2330 /* ViewController.m in Sources */,
+				24163A2B1B7308F6008F2330 /* ContentBlockerTests.m in Sources */,
+				24163A281B7308F6008F2330 /* main.m in Sources */,
+				24163A231B7308F6008F2330 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB3166CC1B653E580007595E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB3166D71B653E590007595E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24163A301B73093E008F2330 /* ContentBlockerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB3166ED1B653E8B0007595E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB3166F71B653E8B0007595E /* ActionRequestHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB3166D21B653E580007595E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB3166B61B653E580007595E /* ContentBlocker */;
+			targetProxy = BB3166D11B653E580007595E /* PBXContainerItemProxy */;
+		};
+		BB3166DD1B653E590007595E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB3166B61B653E580007595E /* ContentBlocker */;
+			targetProxy = BB3166DC1B653E590007595E /* PBXContainerItemProxy */;
+		};
+		BB3166FA1B653E8B0007595E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB3166F01B653E8B0007595E /* MyContentBlock */;
+			targetProxy = BB3166F91B653E8B0007595E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24163A151B7308F6008F2330 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24163A161B7308F6008F2330 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		24163A171B7308F6008F2330 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24163A181B7308F6008F2330 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB3166E21B653E590007595E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BB3166E31B653E590007595E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB3166E51B653E590007595E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ContentBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdanmobile.ContentBlocker;
+				PRODUCT_NAME = ContentBlocker;
+			};
+			name = Debug;
+		};
+		BB3166E61B653E590007595E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ContentBlocker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdanmobile.ContentBlocker;
+				PRODUCT_NAME = ContentBlocker;
+			};
+			name = Release;
+		};
+		BB3166E81B653E590007595E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ContentBlockerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdanmoible.ContentBlockerTests;
+				PRODUCT_NAME = ContentBlockerContentBlockers;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContentBlocker.app/ContentBlocker";
+			};
+			name = Debug;
+		};
+		BB3166E91B653E590007595E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ContentBlockerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdanmoible.ContentBlockerTests;
+				PRODUCT_NAME = ContentBlockerContentBlockers;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ContentBlocker.app/ContentBlocker";
+			};
+			name = Release;
+		};
+		BB3166EB1B653E590007595E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ContentBlockerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdanmoible.ContentBlockerUITests;
+				PRODUCT_NAME = ContentBlockerUIContentBlockers;
+				TEST_TARGET_NAME = ContentBlocker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BB3166EC1B653E590007595E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ContentBlockerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdanmoible.ContentBlockerUITests;
+				PRODUCT_NAME = ContentBlockerUIContentBlockers;
+				TEST_TARGET_NAME = ContentBlocker;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		BB3166FD1B653E8B0007595E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyContentBlock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdanmobile.ContentBlockerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		BB3166FE1B653E8B0007595E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = MyContentBlock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kdanmobile.ContentBlockerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB3166B21B653E580007595E /* Build configuration list for PBXProject "ContentBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB3166E21B653E590007595E /* Debug */,
+				BB3166E31B653E590007595E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB3166E41B653E590007595E /* Build configuration list for PBXNativeTarget "ContentBlocker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB3166E51B653E590007595E /* Debug */,
+				BB3166E61B653E590007595E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB3166E71B653E590007595E /* Build configuration list for PBXNativeTarget "ContentBlockerContentBlockers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB3166E81B653E590007595E /* Debug */,
+				BB3166E91B653E590007595E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB3166EA1B653E590007595E /* Build configuration list for PBXNativeTarget "ContentBlockerUIContentBlockers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB3166EB1B653E590007595E /* Debug */,
+				BB3166EC1B653E590007595E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB3166FC1B653E8B0007595E /* Build configuration list for PBXNativeTarget "MyContentBlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB3166FD1B653E8B0007595E /* Debug */,
+				BB3166FE1B653E8B0007595E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB3166AF1B653E580007595E /* Project object */;
+}
